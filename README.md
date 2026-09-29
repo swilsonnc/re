@@ -1,13 +1,14 @@
-# PS5 Relapse Exploit
+# PS5 Relapse Exploit - Remix
 Supported firmware: 7.00 through 13.60.
 
 ## Usage
 - In the network settings, set Primary DNS to `45.56.67.85` (Recommended)
 - Run `python serve.py` locally, or open https://ntfargo.github.io/Relapse-Exploit/ on the PS5.
 - The default payloads are stored in `payloads/` after a successful run, the ELF loader listens on port `9021`.
-- After elfldr starts on port `9021`, you can press R2 to send `kstuff.elf`, `shadowmountplus.elf`, then `etaHEN.elf`.
+- After elfldr starts on port `9021`, you can press R2 to send `kstuff.elf`, `pldmgr.elf`, `shadowmountplus.elf`, then `onionHEN.elf`.
 
 ## Stability notes
+On my 12.70 firmware kstuff lite v1.11 would crash everytime.  This loads kstuff lite v1.10 instead
 Webkit may need several attempts, reload the page if the browser stalls. The kernel exploit may hang or panic the console, so reboot before trying again if that happens.
 
 ## Exploit chain
