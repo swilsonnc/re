@@ -2,7 +2,7 @@
 Supported firmware: 7.00 through 13.60.
 
 ## Usage
-- In the network settings, set Primary DNS to `45.56.67.85` (Recommended)
+- In the network settings, set Primary DNS to `192.34.128.72` (Recommended)
 - Run `python serve.py` locally, or open https://swilsonnc.github.io/re/ on the PS5.
 - The default payloads are stored in `payloads/` after a successful run, the ELF loader listens on port `9021`.
 - After elfldr starts on port `9021`, you can press R2 to send `kstuff.elf`, `pldmgr.elf`, `shadowmountplus.elf`, then `onionHEN.elf`.
