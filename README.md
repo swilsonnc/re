@@ -1,12 +1,12 @@
 # PS5 Relapse Exploit - Remix
 Supported firmware: 7.00 through 13.60.
-Loads OnionHen instead of etaHEN and also loads Payload Manager.
+Loads kstuff 1.10 and Payload Manager v0.52.
 
 ## Usage
 - In the network settings, set Primary DNS to `192.34.128.72` (Recommended)
 - Run `python serve.py` locally, or open the user guide in settings on the PS5, or open https://swilsonnc.github.io/re/ on the PS5.
 - The default payloads are stored in `payloads/` after a successful run, the ELF loader listens on port `9021`.
-- After elfldr starts on port `9021`, you can press R2 to send `kstuff.elf`, `pldmgr.elf`, `shadowmountplus.elf`, then `onionHEN.elf`.
+- After elfldr starts on port `9021`, you can press R2 to send `kstuff.elf` and `pldmgr.elf`.
 - Alternatively, after elfldr starts you can exit the page without pressing R2 and use [NetCat Gui](https://gbatemp.net/download/netcat-gui-by-modded-warfare.37016/) to send payloads on port 9021.
 - After Payload Manager loads you can use it to load other payloads if needed.
 
