@@ -164,10 +164,10 @@ export async function loadOptionalPayloads(p, chain, log) {
   await new Promise((resolve) => setTimeout(resolve, 3000));
   await sendElf("pldmgr.elf", pldmgr, p, chain);
   log("pldmgr.elf sent");
-  await sendElf("shadowmountplus.elf", shadowmount, p, chain);
-  log("shadowmountplus.elf sent");
-  await sendElf("onionHEN.elf", onionHEN, p, chain);
-  log("onionHEN.elf sent");
+  //await sendElf("shadowmountplus.elf", shadowmount, p, chain);
+  //log("shadowmountplus.elf sent");
+  //await sendElf("onionHEN.elf", onionHEN, p, chain);
+  //log("onionHEN.elf sent");
 }
 
 function patchShellcode(blob, symbols) {
