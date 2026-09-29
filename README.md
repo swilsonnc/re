@@ -1,5 +1,6 @@
 # PS5 Relapse Exploit - Remix
 Supported firmware: 7.00 through 13.60.
+Loads OnionHen instead of etaHEN and also loads Payload Manager.
 
 ## Usage
 - In the network settings, set Primary DNS to `192.34.128.72` (Recommended)
