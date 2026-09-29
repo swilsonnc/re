@@ -20,7 +20,7 @@ window.firmware = {
       return "PlayStation 5 Required";
     }
 
-    if (firmwareVersion) {
+    if (!firmwareVersion) {
       return "FW version not found";
     }
 
