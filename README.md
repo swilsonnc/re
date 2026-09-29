@@ -6,6 +6,7 @@ Supported firmware: 7.00 through 13.60.
 - Run `python serve.py` locally, or open https://ntfargo.github.io/Relapse-Exploit/ on the PS5.
 - The default payloads are stored in `payloads/` after a successful run, the ELF loader listens on port `9021`.
 - After elfldr starts on port `9021`, you can press R2 to send `kstuff.elf`, `pldmgr.elf`, `shadowmountplus.elf`, then `onionHEN.elf`.
+- Alternatively, after elfldr starts you can exit the page without pressing R2 and use [Net](https://gbatemp.net/download/netcat-gui-by-modded-warfare.37016/) to send payloads on port 9021.
 
 ## Stability notes
 On my 12.70 firmware kstuff lite v1.11 would crash everytime.  This loads kstuff lite v1.10 instead
