@@ -16,13 +16,13 @@ const firmwareVersion = firmwareMatch ? firmwareMatch[1] : "";
 window.fw_str = firmwareVersion;
 window.firmware = {
   rejection() {
-    if (firmwareUserAgent.includes("Playstation 5")) {
+    if (!firmwareUserAgent.includes("Playstation 5")) {
       return "PlayStation 5 Required";
     }
 
-    //if (!firmwareVersion) {
-    //  return "FW version not found";
-    //}
+    if (!firmwareVersion) {
+      return "FW version not found";
+    }
 
     if (!supportedFirmware.includes(firmwareVersion)) {
       return `FW ${firmwareVersion} is not supported`;
