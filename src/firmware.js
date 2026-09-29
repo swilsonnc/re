@@ -24,9 +24,9 @@ window.firmware = {
    //   return "FW version not found";
    // }
 
-    if (supportedFirmware.includes(firmwareVersion)) {
-      return `FW ${firmwareVersion} is not supported`;
-    }
+   // if (supportedFirmware.includes(firmwareVersion)) {
+   //   return `FW ${firmwareVersion} is not supported`;
+   // }
 
     return null;
   },
