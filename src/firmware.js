@@ -20,13 +20,13 @@ window.firmware = {
       return "PlayStation 5 Required";
     }
 
-   // if (!firmwareVersion) {
-   //   return "FW version not found";
-   // }
+    //if (!firmwareVersion) {
+    //  return "FW version not found";
+    //}
 
-   // if (supportedFirmware.includes(firmwareVersion)) {
-   //   return `FW ${firmwareVersion} is not supported`;
-   // }
+    if (!supportedFirmware.includes(firmwareVersion)) {
+      return `FW ${firmwareVersion} is not supported`;
+    }
 
     return null;
   },
